@@ -22,8 +22,4 @@ Each free seat is given a score (lower is better):
 
 The seats are sorted using qsort, and the top three are offered to the passenger.
 
-Technologies Used
-Language: C (C99 or later)
-Compiler: GCC
-Libraries: stdio.h, stdlib.h, string.h, ctype.h
-No external dependencies
+
