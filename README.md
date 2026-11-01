@@ -22,4 +22,8 @@ Each free seat is given a score (lower is better):
 
 The seats are sorted using qsort, and the top three are offered to the passenger.
 
+<img width="424" height="355" alt="Screenshot 2026-11-01 at 7 13 03 PM" src="https://github.com/user-attachments/assets/8dede0cd-a93e-4605-92e5-78eec9226d52" />
+<img width="511" height="292" alt="Screenshot 2026-11-01 at 7 13 18 PM" src="https://github.com/user-attachments/assets/df378264-2005-4a9c-8770-c8aa71119ec5" />
 
+<img width="522" height="641" alt="Screenshot 2026-11-01 at 7 14 00 PM" src="https://github.com/user-attachments/assets/d4dc834d-3533-441f-90f6-8db3664a5b1a" />
+<img width="517" height="400" alt="Screenshot 2026-11-01 at 7 14 12 PM" src="https://github.com/user-attachments/assets/2437d728-e521-46b1-a3a4-2fc10390845d" />
