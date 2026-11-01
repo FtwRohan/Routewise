@@ -4,48 +4,6 @@ This project is a command-line Bus Ticket System written in C. It lets passenger
 SeatSmart is a command-line bus ticket system written in C that makes booking a seat simple and efficient. Instead of making passengers scan the whole bus for a seat, it asks for their window or aisle and front, middle, or back preferences, then recommends the best available options. The project combines structs, 2D arrays, and modular functions to handle the full booking process, from seat selection and ticketing to cancellation and passenger search, all using only the standard C library.
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SeatSmart: Bus Ticket System in C</title>
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      color: #222;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h1 {
-      color: #1a4f8b;
-      border-bottom: 3px solid #1a4f8b;
-      padding-bottom: 8px;
-    }
-    h2 {
-      color: #1a4f8b;
-      margin-top: 28px;
-    }
-    p.intro {
-      font-size: 1.05em;
-      background: #f2f6fb;
-      border-left: 4px solid #1a4f8b;
-      padding: 12px 16px;
-    }
-    ul {
-      padding-left: 22px;
-    }
-    li {
-      margin-bottom: 6px;
-    }
-    code {
-      background: #eef1f4;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-family: Consolas, monospace;
-    }
-  </style>
-</head>
 <body>
 
   <h1>SeatSmart: Bus Ticket System in C</h1>
@@ -102,21 +60,6 @@ SeatSmart is a command-line bus ticket system written in C that makes booking a 
     <li>Keeps the main logic simple and the system reliable</li>
   </ul>
 
-  <h2>Technical Details</h2>
-  <ul>
-    <li>Language: C (C99 or later)</li>
-    <li>Compiler: GCC</li>
-    <li>Libraries: <code>stdio.h</code>, <code>stdlib.h</code>, <code>string.h</code>, <code>ctype.h</code></li>
-    <li>No external dependencies</li>
-  </ul>
-
-  <h2>Limitations and Future Work</h2>
-  <ul>
-    <li>Data is stored in memory and resets when the program closes</li>
-    <li>Planned: file storage using <code>fwrite</code> and <code>fread</code></li>
-    <li>Planned: waitlist using a queue</li>
-    <li>Planned: time-based refund rules</li>
-  </ul>
 
 </body>
 </html>
