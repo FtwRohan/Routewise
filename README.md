@@ -1,26 +1,33 @@
 # seat_oracle
 This project is a command-line Bus Ticket System written in C. It lets passengers view buses and seat maps, book tickets, cancel bookings, and search passengers by name.
 
-Bus Ticket System (C)
-
-A command-line bus ticket booking system written in C. It lets passengers view buses, book seats with smart seat recommendations, cancel tickets, and search bookings by passenger name.
-
-Features
-View available buses with route, departure time, fare, and free seats
-Display a seat map ([X] booked, [ ] free)
-Book tickets with seat recommendation based on window/aisle and row preferences
-Manual seat selection with validation (invalid or already booked seats are rejected)
-Cancel tickets with a 20% cancellation fee and refund calculation
-Search bookings by passenger name (case-insensitive)
-Input validation for all menu choices and user input
-How the Seat Recommender Works
-
-Each free seat is given a score (lower is better):
-
-+10 penalty if the seat does not match the window/aisle preference
-+2 penalty for each row away from the preferred zone (front, middle, or back)
-
-The seats are sorted using qsort, and the top three are offered to the passenger.
+SeatSmart is a command-line bus ticket system written in C that makes booking a seat simple and efficient. Instead of making passengers scan the whole bus for a seat, it asks for their window or aisle and front, middle, or back preferences, then recommends the best available options. The project combines structs, 2D arrays, and modular functions to handle the full booking process, from seat selection and ticketing to cancellation and passenger search, all using only the standard C library.
+Overview
+A command-line bus ticket system written in C
+Lets passengers view schedules, choose seats, book, cancel, and search bookings by name
+Built with structs, arrays, and modular functions, using only the standard library
+Bus and Seat Layout
+Manages up to four buses, each with a route, departure time, and fare
+Each bus has 10 rows with 4 seats per row
+Seats A and D are window seats; seats B and C are aisle seats
+Seat data is stored in a 2D array: 0 means free, and a non-zero value is the booked ticket ID
+Seat Recommendation Engine
+Passenger states a window or aisle preference and a front, middle, or back preference
+Every free seat is scored (lower is better):
+Penalty for not matching the window or aisle preference
+Smaller penalty for each row away from the preferred zone
+Scored seats are sorted with qsort
+The top three matches are offered, or the passenger can choose a seat manually (e.g. 5C)
+Booking and Cancellation
+Manual seat entries are checked for format, range, and availability
+Confirmed bookings print a formatted ticket with passenger, bus, seat, and fare details
+Cancellation asks for confirmation, frees the seat, and applies a 20% fee
+Cancelled bookings are marked inactive rather than deleted, preserving history
+Passenger search by name is case-insensitive
+Input Handling
+All keyboard input is read with fgets to avoid scanf buffer issues
+Helper functions validate numbers, text, and seat codes before use
+Keeps the main logic simple and the system reliable
 
 <img width="424" height="355" alt="Screenshot 2026-11-01 at 7 13 03 PM" src="https://github.com/user-attachments/assets/8dede0cd-a93e-4605-92e5-78eec9226d52" />
 <img width="511" height="292" alt="Screenshot 2026-11-01 at 7 13 18 PM" src="https://github.com/user-attachments/assets/df378264-2005-4a9c-8770-c8aa71119ec5" />
