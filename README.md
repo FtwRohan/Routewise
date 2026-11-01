@@ -1,4 +1,4 @@
-# seat_oracle
+# Routewise
 This project is a command-line Bus Ticket System written in C. It lets passengers view buses and seat maps, book tickets, cancel bookings, and search passengers by name.
 
 SeatSmart is a command-line bus ticket system written in C that makes booking a seat simple and efficient. Instead of making passengers scan the whole bus for a seat, it asks for their window or aisle and front, middle, or back preferences, then recommends the best available options. The project combines structs, 2D arrays, and modular functions to handle the full booking process, from seat selection and ticketing to cancellation and passenger search, all using only the standard C library.
